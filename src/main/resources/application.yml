@@ -1,0 +1,17 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: 'jdbc:h2:tcp://localhost/~/test'
+    username: 'SA'
+    password: '1'
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+        format_sql: true
+        show_sql: true
